@@ -34,11 +34,11 @@ Sou **Desenvolvedor Full Stack** apaixonado por transformar ideias em soluções
 
 ## 📂 Projetos em Destaque
 
-### 🗂 TaskFlow • Kanban
-Board Kanban com autenticação JWT e drag-n-drop.  
-**Tecnologias:** React, Node.js, PostgreSQL, Docker  
-![TaskFlow Screenshot](./assets/project-1.jpg)  
-🔗 [Ver projeto](https://example.com)
+### 🚚 Painel de Operações Logísticas
+Um dashboard interativo desenvolvido em **React**.  
+**Tecnologias:** React, Vite, Recharts, Leaflet + React Leaflet, TailwindCSS  
+![TaskFlow Screenshot](./assets/projeto1.png)  
+🔗 [Ver projeto](https://github.com/DevJVidal/painel-operacoes-logisticas)
 
 ---
 
