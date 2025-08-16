@@ -65,7 +65,7 @@ Dashboard com autenticação OAuth e gráficos dinâmicos.
 
 ## 📬 Contato
 - **Email:** [jandersonvidalvidal14@gmail.com](mailto:jandersonvidalvidal14@gmail.com)  
-- **LinkedIn:** [Janderson Vidal](https://www.linkedin.com/in/janderson-vidal-54a131307/)  
+- **LinkedIn:** [Janderson Vidal](https://www.linkedin.com/in/janderson-vidal)  
 - **GitHub:** [DevJVidal](https://github.com/DevJVidal)  
 - **WhatsApp:** [Enviar mensagem](https://wa.me/5588993203616)
   
