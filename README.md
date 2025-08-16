@@ -38,7 +38,7 @@ Sou **Desenvolvedor Full Stack** apaixonado por transformar ideias em soluções
 Um dashboard interativo desenvolvido em **React**.  
 **Tecnologias:** React, Vite, Recharts, Leaflet + React Leaflet, TailwindCSS  
 ![TaskFlow Screenshot](./assets/projeto1.png)  
-🔗 [Ver projeto](https://github.com/DevJVidal/painel-operacoes-logisticas)
+🔗 [Ver projeto](https://devjvidal.github.io/painel-operacoes-logisticas/)
 
 ---
 
