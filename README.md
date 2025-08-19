@@ -42,11 +42,11 @@ Um dashboard interativo desenvolvido em **React**.
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-### 💰 DevFinance API
-API RESTful escalável com NestJS e Prisma ORM.  
-**Tecnologias:** NestJS, Prisma, MySQL, Swagger  
-![DevFinance Screenshot](./assets/project-2.jpg)  
-🔗 [Ver projeto](https://example.com)
+### 💰 SIMULADOR DE TRADE
+SIMULADOR DE TRADE.  
+**Tecnologias:** HTML5, CSS3, JavaScript (ES6+)  
+![DevFinance Screenshot](./assets/projeto2.png)  
+🔗 [Ver projeto](https://devjvidal.github.io/simulador-trade/)
   
 ---------------------------------------------------------------------------------------------------------------------------
 
