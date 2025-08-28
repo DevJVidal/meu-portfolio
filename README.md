@@ -50,10 +50,10 @@ SIMULADOR DE TRADE.
   
 ---------------------------------------------------------------------------------------------------------------------------
 
-### 📊 Insights Dashboard
-Dashboard com autenticação OAuth e gráficos dinâmicos.  
-**Tecnologias:** Next.js, tRPC, MongoDB, Chart.js  
-![Insights Dashboard Screenshot](./assets/project-3.jpg)  
+### 🎬 Vidarix
+Uma plataforma interativa de streaming estilo Netflix, desenvolvida em Next.js, para explorar filmes e séries de forma dinâmica e intuitiva.  
+**Tecnologias:** Next.js, React, TailwindCSS, TMDB. API  
+![Insights Dashboard Screenshot](./assets/projeto3.png)  
 🔗 [Ver projeto](https://example.com)
   
 ---------------------------------------------------------------------------------------------------------------------------
