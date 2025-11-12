@@ -154,6 +154,7 @@
   border: 1px solid rgba(255,255,255,0.1);
   background: rgba(255,255,255,0.05);
   --value: 0%;
+  --ring: rgba(3,211,238,.35);
   position: relative;
 }
 .skill-bar::before {
