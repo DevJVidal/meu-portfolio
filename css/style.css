@@ -53,6 +53,7 @@
 .btn-ghost:focus {
   box-shadow: 0 0 0 2px #a78bfa;
 }
+
 .btn-cv {
   display: inline-flex;
   align-items: center;
@@ -247,3 +248,94 @@ a:focus-visible, button:focus-visible {
   100% { background-position: 60% 30%, 30% 70%, 80% 80%; }
 }
 
+/* === CARROSSEL DE PROJETOS === */
+.projects-carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.projects-carousel {
+  flex: 1;
+  overflow: hidden;
+}
+
+.project-slide {
+  display: none;              /* some por padrão */
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* Mostra apenas o slide ativo */
+.project-slide.active {
+  display: grid;
+}
+
+/* Em telas maiores, 2 cards (tablet) */
+@media (min-width: 640px) {
+  .project-slide.active {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Em desktop grande, 3 cards lado a lado */
+@media (min-width: 1024px) {
+  .project-slide.active {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.carousel-btn {
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background: rgba(15, 23, 42, 0.9);
+  color: #e5e7eb;
+  border-radius: 9999px;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  line-height: 1;
+  transition: background 0.2s, border-color 0.2s, transform 0.1s;
+}
+
+.carousel-btn:hover {
+  background: rgba(30, 64, 175, 0.6);
+  border-color: rgba(191, 219, 254, 0.8);
+  transform: translateY(-1px);
+}
+
+.carousel-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--ring);
+}
+
+.carousel-dots {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.carousel-dots .dot {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(148, 163, 184, 0.8);
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s, border-color 0.2s;
+}
+
+.carousel-dots .dot.active {
+  background: linear-gradient(90deg, #8b5cf6, #22d3ee);
+  border-color: transparent;
+  transform: scale(1.05);
+}
+
+.carousel-dots .dot:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--ring);
+}

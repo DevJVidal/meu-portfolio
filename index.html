@@ -147,49 +147,142 @@
   <!-- Projetos -->
   <section id="projetos" class="mx-auto max-w-7xl px-6 py-20">
     <h2 class="section-title reveal fade-up">Projetos em Destaque</h2>
-    <p class="reveal fade-up mt-3 max-w-2xl text-slate-400">Alguns trabalhos recentes. Passe o mouse para ver detalhes e acesse os links.</p>
+    <p class="reveal fade-up mt-3 max-w-2xl text-slate-400">
+      Alguns trabalhos recentes. Passe o mouse para ver detalhes e acesse os links.
+    </p>
 
-    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <!-- Card 1 -->
-      <article class="project-card reveal fade-up">
-        <img src="./assets/projeto1.png" alt="Projeto 1" class="project-thumb">
-        <div class="project-body">
-          <h3 class="project-title">Painel de Operações Logísticas</h3>
-          <p class="project-desc">O Painel de Operações Logísticas é uma aplicação web desenvolvida para centralizar, visualizar e gerenciar dados de entregas e operações logísticas em tempo real.</p>
-          <ul class="project-tags">
-            <li>React</li><li>Vite</li><li>Recharts + React Leaflet</li><li>Leaflet</li><li>TailwindCSS</li>
-          </ul>
-          <a class="project-link" href="https://devjvidal.github.io/painel-operacoes-logisticas/" target="_blank" rel="noopener">Ver projeto</a>
-        </div>
-      </article>
+    <!-- WRAPPER DO CARROSSEL -->
+    <div class="mt-10 projects-carousel-wrapper">
+      <!-- Botão ANTERIOR -->
+      <button class="carousel-btn" data-direction="prev" aria-label="Projetos anteriores">
+        ‹
+      </button>
 
-      <!-- Card 2 -->
-      <article class="project-card reveal fade-up delay-100">
-        <img src="./assets/projeto2.png" alt="Projeto 2" class="project-thumb">
-        <div class="project-body">
-          <h3 class="project-title">Simulador de Trade</h3>
-          <p class="project-desc">Um projeto em HTML, CSS e JavaScript puro que simula operações de trade em criptomoedas, trazendo gráficos em tempo real, histórico de ordens e estatísticas de desempenho.</p>
-          <ul class="project-tags">
-            <li>HTML5</li><li>CSS3</li><li>JavaScript (ES6+)</li>
-          </ul>
-          <a class="project-link" href="https://devjvidal.github.io/simulador-trade" target="_blank" rel="noopener">Ver projeto</a>
-        </div>
-      </article>
+      <!-- ÁREA DESLIZÁVEL -->
+      <div class="projects-carousel">
+        <!-- SLIDE 1 -->
+        <div class="project-slide active" data-slide="0">
+          <!-- Card 1 -->
+          <article class="project-card reveal fade-up">
+            <img src="./assets/projeto1.png" alt="Projeto 1" class="project-thumb">
+            <div class="project-body">
+              <h3 class="project-title">Painel de Operações Logísticas</h3>
+              <p class="project-desc">
+                O Painel de Operações Logísticas é uma aplicação web desenvolvida para centralizar,
+                visualizar e gerenciar dados de entregas e operações logísticas em tempo real.
+              </p>
+              <ul class="project-tags">
+                <li>React</li><li>Vite</li><li>Recharts + React Leaflet</li><li>Leaflet</li><li>TailwindCSS</li>
+              </ul>
+              <a class="project-link" href="https://devjvidal.github.io/painel-operacoes-logisticas/" target="_blank" rel="noopener">
+                Ver projeto
+              </a>
+            </div>
+          </article>
 
-      <!-- Card 3 -->
-      <article class="project-card reveal fade-up delay-200">
-        <img src="./assets/projeto3.png" alt="Projeto 3" class="project-thumb">
-        <div class="project-body">
-          <h3 class="project-title">Vidarix</h3>
-          <p class="project-desc">Uma plataforma interativa de streaming estilo Netflix, desenvolvida em Next.js, para explorar filmes e séries de forma dinâmica e intuitiva.</p>
-          <ul class="project-tags">
-            <li>Next.js</li><li>React</li><li>TailwindCSS</li><li>TMDB.API</li>
-          </ul>
-          <a class="project-link" href="https://example.com" target="_blank" rel="noopener">Ver projeto</a>
+          <!-- Card 2 -->
+          <article class="project-card reveal fade-up delay-100">
+            <img src="./assets/projeto2.png" alt="Projeto 2" class="project-thumb">
+            <div class="project-body">
+              <h3 class="project-title">Simulador de Trade</h3>
+              <p class="project-desc">
+                Um projeto em HTML, CSS e JavaScript puro que simula operações de trade em criptomoedas,
+                trazendo gráficos em tempo real, histórico de ordens e estatísticas de desempenho.
+              </p>
+              <ul class="project-tags">
+                <li>HTML5</li><li>CSS3</li><li>JavaScript (ES6+)</li>
+              </ul>
+              <a class="project-link" href="https://devjvidal.github.io/simulador-trade" target="_blank" rel="noopener">
+                Ver projeto
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="project-card reveal fade-up delay-200">
+            <img src="./assets/projeto3.png" alt="Projeto 3" class="project-thumb">
+            <div class="project-body">
+              <h3 class="project-title">Vidarix</h3>
+              <p class="project-desc">
+                Uma plataforma interativa de streaming estilo Netflix, desenvolvida em Next.js,
+                para explorar filmes e séries de forma dinâmica e intuitiva.
+              </p>
+              <ul class="project-tags">
+                <li>Next.js</li><li>React</li><li>TailwindCSS</li><li>TMDB.API</li>
+              </ul>
+              <a class="project-link" href="https://example.com" target="_blank" rel="noopener">
+                Ver projeto
+              </a>
+            </div>
+          </article>
         </div>
-      </article>
+
+        <!-- SLIDE 2 -->
+        <div class="project-slide" data-slide="1">
+          <article class="project-card">
+            <img src="./assets/projeto4.png" alt="Projeto 4" class="project-thumb">
+            <div class="project-body">
+              <h3 class="project-title">Projeto Extra 1</h3>
+              <p class="project-desc">
+                Descrição rápida de um projeto adicional. Substitua por um dos seus próximos cases.
+              </p>
+              <ul class="project-tags">
+                <li>Stack X</li><li>Stack Y</li>
+              </ul>
+              <a class="project-link" href="#" target="_blank" rel="noopener">
+                Ver projeto
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./assets/projeto5.png" alt="Projeto 5" class="project-thumb">
+            <div class="project-body">
+              <h3 class="project-title">Projeto Extra 2</h3>
+              <p class="project-desc">
+                Outro projeto extra. Você pode usar para destacar um back-end, API, dashboard, etc.
+              </p>
+              <ul class="project-tags">
+                <li>Node.js</li><li>API REST</li>
+              </ul>
+              <a class="project-link" href="#" target="_blank" rel="noopener">
+                Ver projeto
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="./assets/projeto6.png" alt="Projeto 6" class="project-thumb">
+            <div class="project-body">
+              <h3 class="project-title">Projeto Extra 3</h3>
+              <p class="project-desc">
+                Mais um projeto para compor o carrossel. Troque por algo que faça sentido no seu portfólio.
+              </p>
+              <ul class="project-tags">
+                <li>Next.js</li><li>Full Stack</li>
+              </ul>
+              <a class="project-link" href="#" target="_blank" rel="noopener">
+                Ver projeto
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Botão PRÓXIMO -->
+      <button class="carousel-btn" data-direction="next" aria-label="Próximos projetos">
+        ›
+      </button>
+    </div>
+
+    <!-- Bolinhas de navegação -->
+    <div class="carousel-dots mt-4">
+      <button class="dot active" data-target="0" aria-label="Ir para o primeiro grupo de projetos"></button>
+      <button class="dot" data-target="1" aria-label="Ir para o segundo grupo de projetos"></button>
     </div>
   </section>
+
+
 
   <!-- Habilidades -->
   <section id="habilidades" class="mx-auto max-w-7xl px-6 py-20">
