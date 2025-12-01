@@ -53,15 +53,15 @@ SIMULADOR DE TRADE.
 ### 🎬 Vidarix
 Uma plataforma interativa de streaming estilo Netflix, desenvolvida em Next.js, para explorar filmes e séries de forma dinâmica e intuitiva.  
 **Tecnologias:** Next.js, React, TailwindCSS, TMDB. API  
-![Insights Dashboard Screenshot](./assets/projeto3.png)  
+![Insights Dashboard Screenshot](./assets/projeto3.png)
 🔗 [Ver projeto](https://example.com)
   
 ---------------------------------------------------------------------------------------------------------------------------
 
 ### 🧠 NeuroPulse – Painel de Saúde Mental
 O NeuroPulse é um painel interativo desenvolvido em Python com uso de Streamlit, criado para analisar a prevalência de depressão diagnosticada por profissional de saúde mental no Brasil. Este projeto utiliza dados reais, extraídos diretamente do SIDRA/IBGE (PNS 2019).
-**Tecnologias:** Python 3.x, Streamlit, Pandas, Plotly Express, Pathlib, Unicodedata
-![NeuroPulse Screenshot](./assets/projeto4.png).
+**Tecnologias:** Python, Streamlit, Pandas, Plotly Express, Pathlib, Unicodedata
+![NeuroPulse Screenshot](./assets/projeto4.png)
 🔗 [Ver projeto](https://neuropulse-bigdatapython.streamlit.app)
 
 ---------------------------------------------------------------------------------------------------------------------------
