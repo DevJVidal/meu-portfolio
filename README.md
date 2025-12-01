@@ -1,7 +1,7 @@
 # 🚀 Portfólio — Janderson Vidal
 
 Bem-vindo(a) ao meu portfólio online!  
-Sou **Desenvolvedor Full Stack** apaixonado por transformar ideias em soluções digitais completas, desde o **front-end** até o **back-end**.
+Sou **Desenvolvedor Full Stack**, apaixonado por transformar ideias em soluções digitais completas, atuando tanto no front-end quanto no back-end com foco em performance, usabilidade e boas práticas de desenvolvimento.
 
 > **Stacks principais:** React.js, Next.js, Node.js, NestJS, SQL, Python.
   
