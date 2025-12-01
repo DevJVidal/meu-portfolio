@@ -58,6 +58,14 @@ Uma plataforma interativa de streaming estilo Netflix, desenvolvida em Next.js, 
   
 ---------------------------------------------------------------------------------------------------------------------------
 
+### 🧠 NeuroPulse – Painel de Saúde Mental
+O NeuroPulse é um painel interativo desenvolvido em Python com uso de Streamlit, criado para analisar a prevalência de depressão diagnosticada por profissional de saúde mental no Brasil. Este projeto utiliza dados reais, extraídos diretamente do SIDRA/IBGE (PNS 2019).
+**Tecnologias:** Python 3.x, Streamlit, Pandas, Plotly Express, Pathlib, Unicodedata
+![NeuroPulse Screenshot](./assets/projeto4.png).
+🔗 [Ver projeto](https://neuropulse-bigdatapython.streamlit.app)
+
+---------------------------------------------------------------------------------------------------------------------------
+
 ## 🌐 Acesse meu portfólio
 🔗 [**Clique aqui para visitar**](https://devjvidal.github.io/meu-portfolio/)
   
