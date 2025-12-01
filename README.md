@@ -40,7 +40,7 @@ Um dashboard interativo desenvolvido em **React** para análise de envios de pro
 **Tecnologias:** React, Vite, Recharts, Leaflet + React Leaflet, TailwindCSS  
 
 ![TaskFlow Screenshot](./assets/projeto1.png)  
-🔗 [Ver projeto](https://devjvidal.github.io/painel-operacoes-logisticas/)
+🔗 [Ver projeto](https://github.com/DevJVidal/painel-operacoes-logisticas)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
@@ -50,7 +50,7 @@ Um dashboard interativo desenvolvido em React para simulação de compras e vend
 **Tecnologias:** HTML5, CSS3, JavaScript (ES6+)  
 
 ![DevFinance Screenshot](./assets/projeto2.png)  
-🔗 [Ver projeto](https://devjvidal.github.io/simulador-trade/)
+🔗 [Ver projeto](https://github.com/DevJVidal/simulador-trade)
   
 ---------------------------------------------------------------------------------------------------------------------------
 
@@ -60,7 +60,7 @@ Uma plataforma interativa de streaming no estilo do Netflix, desenvolvida em Nex
 **Tecnologias:** Next.js, React, TailwindCSS, TMDB. API  
 
 ![Insights Dashboard Screenshot](./assets/projeto3.png)
-🔗 [Ver projeto](https://example.com)
+🔗 [Ver projeto](https://github.com/DevJVidal/vidarix)
   
 ---------------------------------------------------------------------------------------------------------------------------
 
@@ -70,7 +70,7 @@ O NeuroPulse é um painel interativo desenvolvido em Python com interface constr
 **Tecnologias:** Python, Streamlit, Pandas, Plotly Express, Pathlib, Unicodedata
 
 ![NeuroPulse Screenshot](./assets/projeto4.png)
-🔗 [Ver projeto](https://neuropulse-bigdatapython.streamlit.app)
+🔗 [Ver projeto](https://github.com/DevJVidal/neuropulse)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
