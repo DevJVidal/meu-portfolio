@@ -1,21 +1,21 @@
 # 🚀 Portfólio — Janderson Vidal
 
-Bem-vindo(a) ao meu portfólio online!  
-Sou **Desenvolvedor Full Stack**, apaixonado por transformar ideias em soluções digitais completas, atuando tanto no front-end quanto no back-end com foco em performance, usabilidade e boas práticas de desenvolvimento.
+Welcome to my online portfolio!  
+I am a **Full Stack Developer**, passionate about transforming ideas into complete digital solutions, working on both the front-end and back-end with a focus on performance, usability, and best development practices.
 
-> **Stacks principais:** React.js, Next.js, Node.js, NestJS, SQL, Python.
+> **Stacks:** React.js, Next.js, Node.js, NestJS, SQL, Python, PHP.
   
 ---------------------------------------------------------------------------------------------------------------------------
 
-## 📌 Sobre Mim
-💻 **Full Stack Developer | React.js | Node.js | SQL | Python**  
-🎓 Estudante de Ciência da Computação  
-🔍 Foco em código limpo, escalável e boas práticas  
-📈 Experiência com projetos responsivos, APIs robustas e integrações modernas
+## 📌 About Me
+💻 **Full-Stack Developer | React.js | Node.js | SQL | Python | PHP**  
+🎓 Computer Science student  
+🔍 Focus on clean, scalable code and best practices.  
+📈 Experience with responsive design, robust APIs, and modern integrations.
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-## 🛠️ Tecnologias
+## 🛠️ Technologies
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=white)
@@ -32,64 +32,64 @@ Sou **Desenvolvedor Full Stack**, apaixonado por transformar ideias em soluçõe
   
 ---------------------------------------------------------------------------------------------------------------------------
 
-## 📂 Projetos em Destaque
+## 📂 Featured Projects
 
-### 🚚 Painel de Operações Logísticas
-Um dashboard interativo desenvolvido em **React** para análise de envios de produtos em todo o Brasil. A plataforma exibe métricas e visualizações sobre produtos enviados, cancelados e com entregas em atraso, permitindo o acompanhamento logístico por meio de gráficos interativos, indicadores em tempo real e filtros regionais.
+### 🚚 Logistics Operations Panel
+An interactive dashboard developed in **React** for analyzing product shipments throughout Brazil. The platform displays metrics and visualizations on shipped, canceled, and delayed products, allowing for logistical tracking through interactive graphs, real-time indicators, and regional filters.
 
-**Tecnologias:** React, Vite, Recharts, Leaflet + React Leaflet, TailwindCSS  
+**Technologies:** React, Vite, Recharts, Leaflet + React Leaflet, TailwindCSS  
 
 ![TaskFlow Screenshot](./assets/projeto1.png)  
-🔗 [Ver projeto](https://github.com/DevJVidal/painel-operacoes-logisticas)
+🔗 [See project](https://github.com/DevJVidal/painel-operacoes-logisticas)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-### 💰 SIMULADOR DE TRADE
-Um dashboard interativo desenvolvido em React para simulação de compras e vendas de criptomoedas. A plataforma permite operar com preços de mercado em tempo real, visualizar métricas de desempenho e testar estratégias financeiras sem riscos reais. O sistema integra dados de criptoativos como Bitcoin e Ethereum, além de oferecer gráficos interativos construídos com bibliotecas como o Recharts e controle de negociações por meio do Redux, tornando a análise dinâmica e intuitiva.
+### 💰 Trade Simulator
+An interactive dashboard developed in React for simulating cryptocurrency buying and selling. The platform allows trading with real-time market prices, visualizing performance metrics, and testing financial strategies without real risk. The system integrates data from crypto assets such as Bitcoin and Ethereum, and offers interactive charts built with libraries like Recharts and trade control via Redux, making analysis dynamic and intuitive.
 
-**Tecnologias:** HTML5, CSS3, JavaScript (ES6+)  
+**Technologies:** HTML5, CSS3, JavaScript (ES6+)  
 
 ![DevFinance Screenshot](./assets/projeto2.png)  
-🔗 [Ver projeto](https://github.com/DevJVidal/simulador-trade)
+🔗 [See project](https://github.com/DevJVidal/simulador-trade)
   
 ---------------------------------------------------------------------------------------------------------------------------
 
 ### 🎬 Vidarix
-Uma plataforma interativa de streaming no estilo do Netflix, desenvolvida em Next.js, para explorar filmes e séries de forma dinâmica e intuitiva. O projeto oferece navegação fluida, catálogo organizado por categorias, busca inteligente e interface responsiva integrada ao Tailwind CSS, com animações e carregamentos otimizados por meio do Vercel, garantindo alto desempenho e experiência imersiva ao usuário.
+An interactive streaming platform in the style of Netflix, developed in Next.js, for exploring movies and series in a dynamic and intuitive way. The project offers fluid navigation, a catalog organized by categories, intelligent search, and a responsive interface integrated with Tailwind CSS, with animations and loading optimized through Vercel, ensuring high performance and an immersive user experience.
 
-**Tecnologias:** Next.js, React, TailwindCSS, TMDB. API  
+**Technologies:** Next.js, React, TailwindCSS, TMDB. API  
 
 ![Insights Dashboard Screenshot](./assets/projeto3.png)
-🔗 [Ver projeto](https://github.com/DevJVidal/vidarix)
+🔗 [See project](https://github.com/DevJVidal/vidarix)
   
 ---------------------------------------------------------------------------------------------------------------------------
 
-### 🧠 NeuroPulse – Painel de Saúde Mental
-O NeuroPulse é um painel interativo desenvolvido em Python com interface construída utilizando o Streamlit, criado para analisar a prevalência de depressão diagnosticada por profissionais de saúde mental no Brasil. O projeto é baseado em dados reais da PNS 2019, extraídos diretamente da plataforma SIDRA/IBGE, mantida pelo IBGE. A aplicação permite a visualização de métricas, análises comparativas e filtragem interativa de indicadores, contribuindo para estudos e acompanhamento do cenário da saúde mental no país.
+### 🧠 NeuroPulse – Mental Health Panel
+NeuroPulse is an interactive dashboard developed in Python with an interface built using Streamlit, created to analyze the prevalence of depression diagnosed by mental health professionals in Brazil. The project is based on real data from the 2019 National Health Survey (PNS), extracted directly from the SIDRA/IBGE platform, maintained by the Brazilian Institute of Geography and Statistics (IBGE). The application allows for the visualization of metrics, comparative analyses, and interactive filtering of indicators, contributing to studies and monitoring of the mental health landscape in the country.  
 
-**Tecnologias:** Python, Streamlit, Pandas, Plotly Express, Pathlib, Unicodedata
+**Technologies:** Python, Streamlit, Pandas, Plotly Express, Pathlib, Unicodedata
 
 ![NeuroPulse Screenshot](./assets/projeto4.png)
-🔗 [Ver projeto](https://github.com/DevJVidal/neuropulse)
+🔗 [See project](https://github.com/DevJVidal/neuropulse)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-## 🌐 Acesse meu portfólio
-🔗 [**Clique aqui para visitar**](https://devjvidal.github.io/meu-portfolio/)
+## 🌐 Access my portfolio
+🔗 [**Click here to visit**](https://devjvidal.github.io/meu-portfolio/)
   
 ---------------------------------------------------------------------------------------------------------------------------
 
-## 📬 Contato
+## 📬 Contact
 - **Email:** [jandersonvidalvidal14@gmail.com](mailto:jandersonvidalvidal14@gmail.com)  
 - **LinkedIn:** [Janderson Vidal](https://www.linkedin.com/in/janderson-vidal)  
 - **GitHub:** [DevJVidal](https://github.com/DevJVidal)  
-- **WhatsApp:** [Enviar mensagem](https://wa.me/5588993203616)
+- **WhatsApp:** [Send message](https://wa.me/5588993203616)
   
 ---------------------------------------------------------------------------------------------------------------------------
 
-## 📜 Este projeto é licenciado sob a **Licença MIT**.
-- [Licença](https://github.com/DevJVidal/painel-operacoes-logisticas?tab=License-1-ov-file)
+## 📜 This project is licensed under the **MIT License**.
+- [License](https://github.com/DevJVidal/painel-operacoes-logisticas?tab=License-1-ov-file)
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-👨‍💻 Desenvolvido por **Janderson Vidal**
+👨‍💻 Developed by **Janderson Vidal**
