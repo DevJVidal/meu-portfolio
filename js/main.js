@@ -199,7 +199,7 @@ const translations = {
     "conversa-desc": "Estou aberto a oportunidades, colaborações e boas conversas sobre tecnologias.",
     "btn-github": "Ver Github",
 
-    // ESTATÍSTICAS (Adicionadas)
+    // ESTATÍSTICAS
     "stat-stacks-label": "Stacks",
     "stat-projects-label": "Projetos",
     "stat-exp-label": "Anos de experiências",
@@ -210,23 +210,18 @@ const translations = {
     "proj1-title": "Painel de Operações Logísticas",
     "proj1-desc": "Aplicação web para centralizar e gerenciar dados logísticos em tempo real.",
     "proj1-link": "Ver projeto",
-
     "proj2-title": "Simulador de Trade",
     "proj2-desc": "Simulação de operações de trade com gráficos e histórico.",
     "proj2-link": "Ver projeto",
-
     "proj3-title": "Vidarix",
     "proj3-desc": "Plataforma de streaming interativa estilo Netflix.",
     "proj3-link": "Ver projeto",
-
     "proj4-title": "NeuroPulse",
     "proj4-desc": "Painel interativo com dados de saúde mental no Brasil.",
     "proj4-link": "Ver projeto",
-
     "proj5-title": "Projeto Extra 2",
     "proj5-desc": "Projeto adicional para demonstração de backend/API.",
     "proj5-link": "Ver projeto",
-
     "proj6-title": "Projeto Extra 3",
     "proj6-desc": "Mais um projeto para compor o portfólio.",
     "proj6-link": "Ver projeto",
@@ -234,7 +229,6 @@ const translations = {
     // HABILIDADES
     "habilidades-title": "Habilidades",
     "habilidades-desc": "Tecnologias que uso para transformar ideias em aplicações reais.",
-    // NÍVEIS DE HABILIDADE (Adicionadas)
     "skill-html-level": "Avançado",
     "skill-css-level": "Avançado",
     "skill-js-level": "Avançado",
@@ -245,9 +239,9 @@ const translations = {
     "skill-php-level": "Avançado",
     "skill-sql-level": "Avançado",
 
-    // CONTATO
-    "contato-title": "Vamos conversar",
-    "contato-desc": "Aberto a projetos, oportunidades e boas ideias.",
+    // CONTATO (ATUALIZADO)
+    "contato-title": "O que você faria se um <span class=\"text-violet-500\">desenvolvedor em software</span> estivesse a apenas um clique de distância?",
+    "contato-desc": "Seja para iniciar um novo projeto ou apenas para dizer olá, adoraria ouvir de você.",
     "contact-email": "Email",
     "contact-linkedin": "LinkedIn",
     "contact-github": "GitHub",
@@ -297,7 +291,7 @@ const translations = {
     "conversa-desc": "Open to opportunities and collaborations.",
     "btn-github": "See Github",
 
-    // ESTATÍSTICAS (Adicionadas)
+    // ESTATÍSTICAS
     "stat-stacks-label": "Stacks",
     "stat-projects-label": "Projects",
     "stat-exp-label": "Years of experience",
@@ -308,23 +302,18 @@ const translations = {
     "proj1-title": "Logistics Operations Dashboard",
     "proj1-desc": "Web app for real-time logistics management.",
     "proj1-link": "View project",
-
     "proj2-title": "Trade Simulator",
     "proj2-desc": "Trading simulator with charts and history.",
     "proj2-link": "View project",
-
     "proj3-title": "Vidarix",
     "proj3-desc": "Netflix-style interactive streaming platform.",
     "proj3-link": "View project",
-
     "proj4-title": "NeuroPulse",
     "proj4-desc": "Interactive mental health dashboard.",
     "proj4-link": "View project",
-
     "proj5-title": "Extra Project 2",
     "proj5-desc": "Backend/API showcase project.",
     "proj5-link": "View project",
-
     "proj6-title": "Extra Project 3",
     "proj6-desc": "Another portfolio project.",
     "proj6-link": "View project",
@@ -332,7 +321,6 @@ const translations = {
     // HABILIDADES
     "habilidades-title": "Skills",
     "habilidades-desc": "Technologies I use to build real applications.",
-    // NÍVEIS DE HABILIDADE (Adicionadas)
     "skill-html-level": "Advanced",
     "skill-css-level": "Advanced",
     "skill-js-level": "Advanced",
@@ -343,9 +331,9 @@ const translations = {
     "skill-php-level": "Advanced",
     "skill-sql-level": "Advanced",
 
-    // CONTATO
-    "contato-title": "Let's talk",
-    "contato-desc": "Open to projects and ideas.",
+    // CONTATO (ATUALIZADO)
+    "contato-title": "What would you do if a <span class=\"text-violet-500\">software developer</span> was just a click away?",
+    "contato-desc": "Whether to start a new project or just to say hi, I'd love to hear from you.",
     "contact-email": "Email",
     "contact-linkedin": "LinkedIn",
     "contact-github": "GitHub",
@@ -369,7 +357,7 @@ function setLanguage(lang) {
   elements.forEach(el => {
     const key = el.id;
     if (translations[lang][key]) {
-      // Usando innerHTML para renderizar as tags <strong> corretamente
+      // Usando innerHTML para renderizar as tags <strong> e <span> corretamente
       el.innerHTML = translations[lang][key];
     }
   });
@@ -410,4 +398,165 @@ document.addEventListener("DOMContentLoaded", () => {
       setLanguage(newLang);
     });
   }
+});
+
+
+// ===============================
+// 🎬 ANIMAÇÕES DE SCROLL (REVEAL)
+// ===============================
+document.addEventListener("DOMContentLoaded", () => {
+  // Seleciona todos os elementos que têm a classe .reveal
+  const reveals = document.querySelectorAll(".reveal");
+
+  // Configuração do observador
+  const revealOptions = {
+    threshold: 0.15, // Aciona quando 15% do elemento estiver visível na tela
+    rootMargin: "0px 0px -50px 0px" 
+  };
+
+  const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      // Se o elemento entrou na tela
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+        // Opcional: descomente a linha abaixo se quiser que a animação aconteça SÓ UMA VEZ
+        // observer.unobserve(entry.target); 
+      } else {
+        // Remove a classe se ele sair da tela (faz a animação repetir ao subir e descer)
+        entry.target.classList.remove("active");
+      }
+    });
+  }, revealOptions);
+
+  // Coloca o observador para vigiar cada elemento .reveal
+  reveals.forEach(reveal => {
+    revealOnScroll.observe(reveal);
+  });
+});
+
+// ===============================
+// 🔥 FUNÇÕES EXTRAS (NÍVEL SÊNIOR)
+// ===============================
+document.addEventListener("DOMContentLoaded", () => {
+  
+  // 1. EFEITO DE DIGITAÇÃO (Typing Effect)
+  const words = ["React", "Node.js", "Python", "PostgreSQL", "Next.js", "Tailwind CSS"];
+  let i = 0, j = 0, isDeleting = false;
+  const typeTarget = document.getElementById("typewriter");
+  
+  function type() {
+    if (!typeTarget) return;
+    const currentWord = words[i];
+    
+    if (isDeleting) {
+      typeTarget.textContent = currentWord.substring(0, j - 1);
+      j--;
+    } else {
+      typeTarget.textContent = currentWord.substring(0, j + 1);
+      j++;
+    }
+
+    let typeSpeed = isDeleting ? 50 : 100;
+
+    if (!isDeleting && j === currentWord.length) {
+      typeSpeed = 2000; // Pausa com a palavra completa
+      isDeleting = true;
+    } else if (isDeleting && j === 0) {
+      isDeleting = false;
+      i = (i + 1) % words.length; // Passa para a próxima palavra
+      typeSpeed = 500; // Pausa antes de digitar a próxima
+    }
+    setTimeout(type, typeSpeed);
+  }
+  if(typeTarget) type(); // Inicia o efeito
+
+  // 2. SCROLLSPY (Destacar o menu ativo)
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  const spyOptions = {
+    rootMargin: "-20% 0px -70% 0px" // Gatilho quando a seção passa pelo meio da tela
+  };
+
+  const scrollSpy = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => {
+          link.classList.remove("nav-active");
+          if (link.getAttribute("href") === `#${entry.target.id}`) {
+            link.classList.add("nav-active");
+          }
+        });
+      }
+    });
+  }, spyOptions);
+
+  sections.forEach(sec => scrollSpy.observe(sec));
+
+  // 3. BOTÃO VOLTAR AO TOPO
+  const bttBtn = document.getElementById("back-to-top");
+  if(bttBtn) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        bttBtn.classList.remove("opacity-0", "translate-y-10", "pointer-events-none");
+        bttBtn.classList.add("opacity-100", "translate-y-0", "pointer-events-auto");
+      } else {
+        bttBtn.classList.add("opacity-0", "translate-y-10", "pointer-events-none");
+        bttBtn.classList.remove("opacity-100", "translate-y-0", "pointer-events-auto");
+      }
+    });
+
+    bttBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+  // 4. EFEITO GRADIENTE SEGUINDO O MOUSE NO FUNDO
+  const glow = document.getElementById("mouse-glow");
+  if (glow) {
+    window.addEventListener("mousemove", (e) => {
+      glow.style.setProperty("--x", `${e.clientX}px`);
+      glow.style.setProperty("--y", `${e.clientY}px`);
+    });
+    // Só aparece quando o mouse se move (evita bugar em mobile)
+    window.addEventListener("mouseover", () => glow.style.opacity = "1");
+  }
+
+  // 5. EASTER EGG NO CONSOLE (Organizado)
+  console.log(
+    "%c👋 Olá, dev! Vasculhando o código, hein? \n%cComo pode ver, o código é limpo e organizado. Vamos trocar uma ideia no LinkedIn: https://www.linkedin.com/in/janderson-vidal",
+    "font-size: 18px; color: #8b5cf6; font-weight: bold; text-shadow: 0 0 10px rgba(139,92,246,0.5);",
+    "font-size: 14px; color: #cbd5e1; font-family: monospace; line-height: 1.5;"
+  );
+
+  // 6. EFEITO TILT (3D) NOS PROJETOS - Versão Final (Para Carrossel)
+  function applyTilt() {
+    const cards = document.querySelectorAll(".project-card");
+    if (typeof VanillaTilt !== "undefined") {
+      cards.forEach(card => {
+        if (card.vanillaTilt) card.vanillaTilt.destroy();
+      });
+      VanillaTilt.init(cards, {
+        max: 10,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.15,
+        scale: 1.02,
+      });
+    }
+  }
+
+  applyTilt(); // Inicializa na carga
+
+  // Reaplica o Tilt ao interagir com o carrossel
+  document.addEventListener("click", (e) => {
+    if (
+      e.target.classList.contains("carousel-btn") || 
+      e.target.classList.contains("dot") ||
+      e.target.closest(".carousel-btn")
+    ) {
+      setTimeout(applyTilt, 200);
+    }
+  });
+
 });

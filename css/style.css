@@ -3,12 +3,36 @@
   --ring: rgba(139,92,246,.35);
 }
 
+/* 2. ScrollSpy e Links (Item do menu ativo) */
 .nav-link {
   color: #cbd5e1;
-  transition: color 0.2s;
+  transition: all 0.3s ease;
+  position: relative;
 }
+
 .nav-link:hover {
   color: #fff;
+}
+
+/* Estado Ativo - Tema Roxo Oficial */
+.nav-active {
+  color: #8b5cf6 !important; /* Roxo oficial do seu tema */
+  font-weight: 700;
+  text-shadow: 0 0 15px rgba(139, 92, 246, 0.4); /* Brilho neon sutil */
+}
+
+/* Indicador (pontinho roxo) abaixo do menu ativo */
+.nav-active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: #8b5cf6;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #8b5cf6;
 }
 
 /* Botões */
@@ -78,12 +102,6 @@
   border-color: rgba(139,92,246,0.9);
 }
 
-/* Foco (teclado) */
-.btn-cv:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(167,139,250,0.6);
-}
-
 /* Títulos de seção */
 .section-title {
   font-size: 2rem;
@@ -126,9 +144,6 @@
   object-fit: cover;
   opacity: 0.9;
   transition: transform 0.3s;
-}
-.project-card:hover .project-thumb {
-  transform: scale(1.03);
 }
 .project-body {
   padding: 1.25rem;
@@ -196,7 +211,7 @@
   transition: width 1.2s cubic-bezier(.2,.8,.2,1);
 }
 
-/* Chips de contato */
+/* Chips de contato antigos */
 .contact-chip {
   display: inline-flex;
   align-items: center;
@@ -213,19 +228,29 @@
   background: rgba(255,255,255,0.1);
 }
 
-/* Animações de revelação */
-.reveal { opacity: 0; transform: translateY(10px); }
-.reveal.visible { opacity: 1; transform: none; transition: opacity .7s ease, transform .7s ease; }
-.fade-left { transform: translateX(-18px); }
-.fade-right { transform: translateX(18px); }
-.delay-100 { transition-delay: .1s !important; }
-.delay-200 { transition-delay: .2s !important; }
+/* ===============================
+   📧 NOVOS CHIPS DE CONTATO (MODERNO)
+   =============================== */
+.contact-chip-modern {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
 
-/* Acessibilidade foco */
-a:focus-visible, button:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px var(--ring);
-  border-radius: .55rem;
+.contact-chip-modern:hover {
+  background: rgba(139, 92, 246, 0.1);
+  border-color: #8b5cf6;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px -10px rgba(139, 92, 246, 0.5);
 }
 
 /* Aurora animada */
@@ -261,24 +286,21 @@ a:focus-visible, button:focus-visible {
 }
 
 .project-slide {
-  display: none;              /* some por padrão */
+  display: none;
   grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
-/* Mostra apenas o slide ativo */
 .project-slide.active {
   display: grid;
 }
 
-/* Em telas maiores, 2 cards (tablet) */
 @media (min-width: 640px) {
   .project-slide.active {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-/* Em desktop grande, 3 cards lado a lado */
 @media (min-width: 1024px) {
   .project-slide.active {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -299,17 +321,6 @@ a:focus-visible, button:focus-visible {
   font-size: 1.4rem;
   line-height: 1;
   transition: background 0.2s, border-color 0.2s, transform 0.1s;
-}
-
-.carousel-btn:hover {
-  background: rgba(30, 64, 175, 0.6);
-  border-color: rgba(191, 219, 254, 0.8);
-  transform: translateY(-1px);
-}
-
-.carousel-btn:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px var(--ring);
 }
 
 .carousel-dots {
@@ -335,7 +346,53 @@ a:focus-visible, button:focus-visible {
   transform: scale(1.05);
 }
 
-.carousel-dots .dot:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px var(--ring);
+/* ===============================
+   🎬 ANIMAÇÕES DE SCROLL (REVEAL)
+   =============================== */
+.reveal {
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+}
+
+.fade-up { transform: translateY(60px); }
+.fade-left { transform: translateX(-60px); }
+.fade-right { transform: translateX(60px); }
+.delay-100 { transition-delay: 100ms !important; }
+.delay-200 { transition-delay: 200ms !important; }
+
+/* ===============================
+   🔥 MELHORIAS UX / UI
+   =============================== */
+section {
+  scroll-margin-top: 5rem;
+}
+
+/* Seção de Contato maior para o ScrollSpy funcionar */
+#contato {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ===============================
+   🌟 SCROLLBAR PERSONALIZADA
+   =============================== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #4c1d95;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7c3aed;
 }

@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title id="page-title">Janderson • Desenvolvedor Full Stack</title>
   <meta name="description" content="Portfólio de Janderson — Desenvolvedor Full Stack (React, Node, SQL, Python). Projetos, habilidades e contato." />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-hashAqui" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -18,9 +19,10 @@
 </head>
 <body class="bg-slate-950 text-slate-200 antialiased selection:bg-violet-600/30 selection:text-violet-100" style="font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;">
 
-  <div class="pointer-events-none fixed inset-0 -z-10">
+  <div class="pointer-events-none fixed inset-0 -z-10 bg-slate-950">
     <div class="absolute inset-0 bg-[radial-gradient(60rem_30rem_at_top,rgba(124,58,237,0.15),transparent_60%)]"></div>
     <div class="absolute inset-0 bg-[radial-gradient(40rem_25rem_at_bottom_right,rgba(2,132,199,0.12),transparent_60%)]"></div>
+    <div id="mouse-glow" class="absolute inset-0 opacity-0 transition-opacity duration-300" style="background: radial-gradient(600px circle at var(--x, 50%) var(--y, 50%), rgba(139, 92, 246, 0.15), transparent 40%);"></div>
   </div>
 
   <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-slate-950/60">
@@ -37,7 +39,8 @@
         <li><a href="#contato" class="nav-link" id="nav-contato">Contato</a></li>
       </ul>
       <div class="flex items-center gap-3">
-        <button id="lang-toggle" class="rounded-md border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold tracking-wider text-slate-300 shadow-sm transition-all duration-300 hover:border-violet-500/50 hover:bg-violet-500/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-violet-400 active:scale-95">
+        
+        <button id="lang-toggle" class="text-sm px-3 py-1 rounded-md border border-white/10 hover:bg-white/10 transition">
           EN
         </button>
 
@@ -60,6 +63,12 @@
       <p id="hero-desc" class="mt-5 text-base text-slate-400 sm:text-lg">
         Eu crio aplicações web funcionais, acessíveis e escaláveis — do design de interfaces ao back-end robusto.
       </p>
+
+      <div class="mt-6 flex h-6 items-center justify-center font-mono text-sm sm:text-base text-violet-400">
+        <span class="mr-2 text-slate-500">></span>
+        <span id="typewriter" class="font-semibold tracking-wider"></span>
+        <span class="animate-pulse font-bold">_</span>
+      </div>
 
       <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
         <a href="#projetos" class="btn-primary" id="btn-projects">Ver Projetos</a>
@@ -114,7 +123,7 @@
         <div class="mt-8 flex flex-wrap gap-3">
           <a href="#contato" class="btn-primary" id="btn-contato">Entre em contato</a>
           <a id="btn-github" href="https://github.com/DevJVidal" target="_blank" class="btn-ghost">Ver GitHub</a>
-          <a id="btn-linkedin" href="https://www.linkedin.com/in/janderson-vidal" target="_blank" class="btn-ghost">LinkedIn</a>
+          <a id="btn-linkedin-sobre" href="https://www.linkedin.com/in/janderson-vidal" target="_blank" class="btn-ghost">LinkedIn</a>
         </div>
       </div>
 
@@ -270,8 +279,6 @@
     </div>
   </section>
 
-
-
   <section id="habilidades" class="mx-auto max-w-7xl px-6 py-20">
     <h2 class="section-title reveal fade-up" id="habilidades-title">Habilidades</h2>
     <p class="reveal fade-up mt-3 max-w-2xl text-slate-400" id="habilidades-desc">Tecnologias que uso para transformar ideias em aplicações reias.
@@ -366,26 +373,34 @@
     </div>
   </section>
 
-  <section id="contato" class="mx-auto max-w-7xl px-6 py-20">
+  <section id="contato" class="mx-auto max-w-7xl px-6 py-24 md:py-32">
     <div class="reveal fade-up">
-      <h2 class="section-title" id="contato-title">Vamos conversar</h2>
-      <p class="mt-3 max-w-2xl text-slate-400" id="contato-desc">Aberto a projetos, oportunidades e boas ideias. 
-        Fique à vontade para entrar em contato através das redes abaixo.</p>
-    </div>
+      <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl lg:text-6xl tracking-tight max-w-4xl" id="contato-title">
+        O que você faria se um <span class="text-violet-500">desenvolvedor em software</span> estivesse a apenas um clique de distância?
+      </h2>
+      
+      <p class="mt-8 text-lg text-slate-400 max-w-2xl leading-relaxed" id="contato-desc">
+        Seja para iniciar um novo projeto ou apenas para dizer olá, adoraria ouvir de você.
+      </p>
 
-    <div class="reveal fade-up mt-8 flex flex-wrap gap-4">
-      <a class="contact-chip" href="mailto:jandersonvidalvidal14@gmail.com" target="_blank" rel="noopener">
-        <img src="./assets/icons/mail.svg" alt="" class="h-5 w-5 opacity-90" style="filter: invert(38%) sepia(98%) saturate(749%) hue-rotate(-10deg) brightness(100%) contrast(100%);"> <span id="contact-email">Email</span>
-      </a>
-      <a class="contact-chip" href="https://www.linkedin.com/in/janderson-vidal" target="_blank" rel="noopener">
-        <img src="./assets/icons/linkedin.svg" alt="" class="h-5 w-5 opacity-90" style="filter: invert(38%) sepia(98%) saturate(749%) hue-rotate(180deg) brightness(100%) contrast(100%);"> <span id="contact-linkedin">LinkedIn</span>
-      </a>
-      <a class="contact-chip" href="https://github.com/DevJVidal" target="_blank" rel="noopener">
-        <img src="./assets/icons/github.svg" alt="" class="h-5 w-5 opacity-90" style="filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);"> <span id="contact-github">GitHub</span>
-      </a>
-      <a class="contact-chip" href="https://wa.me/5588993203616" target="_blank" rel="noopener">
-        <img src="./assets/icons/whatsapp.svg" alt="" class="h-5 w-5 opacity-90" style="filter: invert(38%) sepia(98%) saturate(749%) hue-rotate(90deg) brightness(100%) contrast(100%);"> <span id="contact-whatsapp">WhatsApp</span>
-      </a>
+      <div class="mt-12">
+        <a href="mailto:jandersonvidalvidal14@gmail.com" class="group relative inline-block text-lg font-bold text-slate-300 transition-colors hover:text-white sm:text-xl md:text-2xl">
+          jandersonvidalvidal14@gmail.com
+          <span class="absolute -bottom-1 left-0 h-0.5 w-0 bg-violet-600 transition-all group-hover:w-full"></span>
+        </a>
+        </div>
+
+      <div class="mt-16 flex flex-wrap gap-6">
+        <a class="contact-chip-modern" href="https://www.linkedin.com/in/janderson-vidal" target="_blank" id="contact-linkedin">
+          <i class="fa-brands fa-linkedin-in text-xl"></i> <span>LinkedIn</span>
+        </a>
+        <a class="contact-chip-modern" href="https://github.com/DevJVidal" target="_blank" id="contact-github">
+          <i class="fa-brands fa-github text-xl"></i> <span>GitHub</span>
+        </a>
+        <a class="contact-chip-modern" href="https://wa.me/5588993203616" target="_blank" id="contact-whatsapp">
+          <i class="fa-brands fa-whatsapp text-xl"></i> <span>WhatsApp</span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -402,6 +417,10 @@
       </div>
     </div>
   </footer>
+
+  <button id="back-to-top" class="pointer-events-none fixed bottom-8 right-8 z-50 translate-y-10 rounded-full bg-violet-600 p-3 text-white shadow-lg shadow-violet-600/30 opacity-0 transition-all duration-300 hover:bg-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-400 active:scale-95" aria-label="Voltar ao topo">
+    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+  </button>
 
   <script src="./js/main.js"></script>
 </body>
