@@ -3,233 +3,223 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Janderson • Desenvolvedor Full Stack</title>
+  <title id="page-title">Janderson • Desenvolvedor Full Stack</title>
   <meta name="description" content="Portfólio de Janderson — Desenvolvedor Full Stack (React, Node, SQL, Python). Projetos, habilidades e contato." />
-  <!-- Font Awesome via CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-hashAqui" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- TailwindCSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Fonte -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Estilos extras -->
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
 </head>
 <body class="bg-slate-950 text-slate-200 antialiased selection:bg-violet-600/30 selection:text-violet-100" style="font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;">
 
-  <!-- BG gradiente sutil -->
   <div class="pointer-events-none fixed inset-0 -z-10">
     <div class="absolute inset-0 bg-[radial-gradient(60rem_30rem_at_top,rgba(124,58,237,0.15),transparent_60%)]"></div>
     <div class="absolute inset-0 bg-[radial-gradient(40rem_25rem_at_bottom_right,rgba(2,132,199,0.12),transparent_60%)]"></div>
   </div>
 
-  <!-- Navbar -->
   <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-slate-950/60">
     <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
       <a href="#home" class="group inline-flex items-center gap-2">
         <img src="./assets/icons/logojr.png" alt="Logo" class="h-8 w-8"
           style="filter: brightness(0) saturate(100%) invert(41%) sepia(87%) saturate(747%) hue-rotate(230deg) brightness(95%) contrast(110%);" />
-        <span class="text-[#8B5CF6] group-hover:text-white transition">DevJVidal</span>
+        <span id="nav-logo-text" class="text-[#8B5CF6] group-hover:text-white transition">DevJVidal</span>
       </a>
       <ul class="hidden md:flex items-center gap-6 text-sm text-slate-300">
-        <li><a href="#sobre" class="nav-link">Sobre</a></li>
-        <li><a href="#projetos" class="nav-link">Projetos</a></li>
-        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-        <li><a href="#contato" class="nav-link">Contato</a></li>
+        <li><a href="#sobre" class="nav-link" id="nav-sobre">Sobre</a></li>
+        <li><a href="#projetos" class="nav-link" id="nav-projetos">Projetos</a></li>
+        <li><a href="#habilidades" class="nav-link" id="nav-habilidades">Habilidades</a></li>
+        <li><a href="#contato" class="nav-link" id="nav-contato">Contato</a></li>
       </ul>
-      <a href="#contato" class="rounded-md bg-violet-600 px-4 py-2 text-sm font-medium text-white shadow-lg shadow-violet-600/30 hover:bg-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-400">Fale comigo</a>
+      <div class="flex items-center gap-3">
+        <button id="lang-toggle" class="rounded-md border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold tracking-wider text-slate-300 shadow-sm transition-all duration-300 hover:border-violet-500/50 hover:bg-violet-500/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-violet-400 active:scale-95">
+          EN
+        </button>
+
+        <a href="#contato" class="rounded-md bg-violet-600 px-4 py-2 text-sm font-medium text-white shadow-lg shadow-violet-600/30 hover:bg-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-400" id="btn-contato">
+          Fale comigo
+        </a>
+      </div>
     </nav>
   </header>
 
-  <!-- Hero -->
   <section id="home" class="relative mx-auto max-w-7xl px-6 pt-16 pb-8 md:pt-24">
     <div class="mx-auto max-w-3xl text-center">
-      <p class="mx-auto mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-300">
+      <p id="hero-badge" class="mx-auto mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-300" >
         <span class="inline-block h-2 w-2 animate-pulse rounded-full bg-violet-400"></span>
-        Portfólio em constante evolução
+        <span id="hero-badge-text">Portfólio em constante evolução</span>
       </p>
-      <h1 class="text-3xl font-extrabold leading-tight text-white sm:text-4xl md:text-6xl tracking-tight">
-        Ferramentas e soluções <span class="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-300 bg-clip-text text-transparent">Full Stack</span> para produtos modernos
+      <h1 id="hero-title" class="text-3xl font-extrabold leading-tight text-white sm:text-4xl md:text-6xl tracking-tight">
+        Ferramentas e soluções <span id="hero-title-highlight" class="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-300 bg-clip-text text-transparent">Full Stack</span> para produtos modernos
       </h1>
-      <p class="mt-5 text-base text-slate-400 sm:text-lg">
+      <p id="hero-desc" class="mt-5 text-base text-slate-400 sm:text-lg">
         Eu crio aplicações web funcionais, acessíveis e escaláveis — do design de interfaces ao back-end robusto.
       </p>
 
       <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
-        <a href="#projetos" class="btn-primary">Ver Projetos</a>
-        <a href="#sobre" class="btn-ghost">Sobre mim</a>
-        <a href="./assets/janderson.pdf" class="btn-cv" download>Baixar CV</a>
+        <a href="#projetos" class="btn-primary" id="btn-projects">Ver Projetos</a>
+        <a href="#sobre" class="btn-ghost" id="btn-sobre">Sobre mim</a>
+        <a href="./assets/janderson.pdf" class="btn-cv" download id="btn-cv">Baixar CV</a>
       </div>
     </div>
 
-    <!-- Vídeo / mock -->
     <div class="reveal fade-up mt-12 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/40 shadow-2xl">
       <div class="relative">
         <video src="./assets/hero-work1.mp4" class="aspect-video w-full object-cover opacity-90 rounded-2xl" autoplay loop muted playsinline></video>
-        <a href="#projetos" class="group absolute left-4 top-4 inline-flex items-center gap-2 rounded-full bg-black/60 px-3 py-1 text-xs text-slate-200 backdrop-blur hover:bg-black/80">
+        <a id="hero-video-link" href="#projetos" class="group absolute left-4 top-4 inline-flex items-center gap-2 rounded-full bg-black/60 px-3 py-1 text-xs text-slate-200 backdrop-blur hover:bg-black/80">
           <span class="inline-block h-2.5 w-2.5 rounded-full bg-violet-400 group-hover:animate-ping"></span>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Sobre Mim -->
   <section id="sobre" class="mx-auto max-w-7xl px-6 py-20">
     <div class="grid items-start gap-10 md:grid-cols-[1.1fr_.9fr]">
       <div class="reveal fade-left">
-        <h2 class="section-title">Sobre mim</h2>
-        <p class="mt-4 text-slate-300 leading-relaxed">
-          <strong class="text-white">Desenvolvedor Full Stack</strong><br><br>
-          Olá, eu me chamo <strong>Janderson Vidal</strong>! Sou um desenvolvedor full stack apaixonado por transformar ideias em código.
-          Trabalho no front-end e back-end, criando aplicações funcionais, intuitivas e escaláveis.
-          Tenho foco em escrever código limpo e eficiente, sempre buscando aprender e evoluir.
+        <h2 class="section-title" id="sobre-title">Sobre mim</h2>
+        <p id="sobre-desc" class="mt-4 text-slate-300 leading-relaxed">
+          <strong class="text-white" id="sobre-role">Desenvolvedor Full Stack</strong><br><br>
+          <span id="sobre-intro">Olá, eu me chamo</span> <strong id="sobre-name">Janderson Vidal</strong>! <span id="sobre-bio">Sou um desenvolvedor full stack especializado na criação de aplicações web completas.
+          Atuo no desenvolvimento de interfaces modernas e na construção de APIs e sistemas escaláveis no back-end.
+          Busco escrever código limpo, eficiente e orientado a boas práticas, sempre focado em entregar soluções funcionais e bem estreturadas.</span>
         </p>
 
         <div class="mt-6 grid gap-4 text-slate-300">
           <div>
-            <h3 class="font-semibold text-white">Áreas de atuação</h3>
+            <h3 class="font-semibold text-white" id="area-title">Áreas de atuação</h3>
             <ul class="mt-2 list-disc pl-5 space-y-1">
-              <li>Desenvolvimento de interfaces interativas e responsivas com <strong>React</strong> e <strong>Next.js</strong>.</li>
-              <li>Construção de APIs robustas e escaláveis com <strong>Node.js</strong>, <strong>Express</strong> e <strong>NestJS</strong>.</li>
-              <li>Gerenciamento de bancos de dados com <strong>PostgreSQL</strong>, <strong>MySQL</strong> e <strong>MongoDB</strong>.</li>
-              <li>Versionamento e boas práticas usando <strong>Git</strong> e <strong>Docker</strong>.</li>
+              <li id="area-1">Desenvolvimento de interfaces interativas e responsivas com <strong>React</strong> e <strong>Next.js</strong>.</li>
+              <li id="area-2">Construção de APIs robustas e escaláveis com <strong>Node.js</strong>, <strong>Express</strong> e <strong>NestJS</strong>.</li>
+              <li id="area-3">Gerenciamento de bancos de dados com <strong>PostgreSQL</strong>, <strong>MySQL</strong> e <strong>MongoDB</strong>.</li>
+              <li id="area-4">Versionamento e boas práticas usando <strong>Git</strong> e <strong>Docker</strong>.</li>
             </ul>
           </div>
           <div>
-            <h3 class="font-semibold text-white">Motivação</h3>
+            <h3 id="motivacao-title" class="font-semibold text-white">Motivação</h3>
             <ul class="mt-2 list-disc pl-5 space-y-1">
-              <li>Criar soluções que realmente impactam.</li>
-              <li>Aprender novas tecnologias e compartilhar conhecimento.</li>
-              <li>Trabalhar em equipe e trocar experiências.</li>
+              <li id="motivacao-1">Desenvolver soluções úteis e bem estruturadas, com impacto real para quem utiliza.</li>
+              <li id="motivacao-2">Buscar evolução contínua por meio de novas tecnologias e boas práticas.</li>
+              <li id="motivacao-3">Colaborar com outros desenvolvedores, aprendendo e contribuindo em equipe.</li>
             </ul>
           </div>
-          <p class="mt-2">Vamos conversar? Seja para discutir tecnologia, colaborar em projetos ou apenas network, estou sempre aberto a novas conexões!</p>
+          <h3 class="font-semibold text-white" id="conversa-title">Vamos conversar?</h3>
+          <p class="mt-2" id="conversa-desc">Estou aberto a oportunidades, colaborações e boas conversas sobre tecnologias.</p>
         </div>
 
         <div class="mt-8 flex flex-wrap gap-3">
-          <a href="#contato" class="btn-primary">Entre em contato</a>
-          <a href="https://github.com/DevJVidal" target="_blank" class="btn-ghost">Ver GitHub</a>
-          <a href="https://www.linkedin.com/in/janderson-vidal" target="_blank" class="btn-ghost">LinkedIn</a>
+          <a href="#contato" class="btn-primary" id="btn-contato">Entre em contato</a>
+          <a id="btn-github" href="https://github.com/DevJVidal" target="_blank" class="btn-ghost">Ver GitHub</a>
+          <a id="btn-linkedin" href="https://www.linkedin.com/in/janderson-vidal" target="_blank" class="btn-ghost">LinkedIn</a>
         </div>
       </div>
 
       <div class="reveal fade-right">
         <div class="relative mx-auto max-w-sm">
           <img src="./assets/profile.jpeg" alt="Foto de perfil" class="w-full rounded-2xl border border-white/10 shadow-2xl" />
-          <!-- Fundo aurora animado -->
           <div class="absolute inset-0 -z-10 aurora-bg"></div>
-          <!-- Gradiente violeta original -->
           <div class="pointer-events-none absolute inset-x-8 -bottom-8 -top-8 -z-20 rounded-[2rem] bg-gradient-to-b from-violet-600/10 to-transparent blur-2xl"></div>
         </div>
         <div class="mt-8 grid grid-cols-3 gap-4 text-center text-xs text-slate-300">
           <div class="stat-card">
-            <span class="text-2xl font-semibold text-white">+5</span>
-            <span>Stacks</span>
+            <span id="stat-stacks-num" class="text-2xl font-semibold text-white">+10</span>
+            <span id="stat-stacks-label">Stacks</span>
           </div>
           <div class="stat-card">
-            <span class="text-2xl font-semibold text-white">+10</span>
-            <span>Projetos</span>
+            <span id="stat-projects-num" class="text-2xl font-semibold text-white">+5</span>
+            <span id="stat-projects-label">Projetos</span>
           </div>
           <div class="stat-card">
-            <span class="text-2xl font-semibold text-white">+2</span>
-            <span>Anos de experiências</span>
+            <span id="stat-exp-num" class="text-2xl font-semibold text-white">+3</span>
+            <span id="stat-exp-label">Anos de experiências</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Projetos -->
   <section id="projetos" class="mx-auto max-w-7xl px-6 py-20">
-    <h2 class="section-title reveal fade-up">Projetos em Destaque</h2>
-    <p class="reveal fade-up mt-3 max-w-2xl text-slate-400">
-      Alguns trabalhos recentes. Passe o mouse para ver detalhes e acesse os links.
+    <h2 class="section-title reveal fade-up" id="projetos-title">Projetos em Destaque</h2>
+    <p class="reveal fade-up mt-3 max-w-2xl text-slate-400" id="projetos-desc">
+      Projetos reais, construídos para resolver problemas de formas práticas.
+      Explore cada um para ver como foram desenvolvidos.
     </p>
 
-    <!-- WRAPPER DO CARROSSEL -->
     <div class="mt-10 projects-carousel-wrapper">
-      <!-- Botão ANTERIOR -->
-      <button class="carousel-btn" data-direction="prev" aria-label="Projetos anteriores">
+      <button id="carousel-prev" class="carousel-btn" data-direction="prev" aria-label="Projetos anteriores">
         ‹
       </button>
 
-      <!-- ÁREA DESLIZÁVEL -->
       <div class="projects-carousel">
-        <!-- SLIDE 1 -->
         <div class="project-slide active" data-slide="0">
-          <!-- Card 1 -->
           <article class="project-card reveal fade-up">
             <img src="./assets/projeto1.png" alt="Projeto 1" class="project-thumb">
             <div class="project-body">
-              <h3 class="project-title">Painel de Operações Logísticas</h3>
-              <p class="project-desc">
+              <h3 id="proj1-title" class="project-title">Painel de Operações Logísticas</h3>
+              <p id="proj1-desc" class="project-desc">
                 O Painel de Operações Logísticas é uma aplicação web desenvolvida para centralizar,
                 visualizar e gerenciar dados de entregas e operações logísticas em tempo real.
               </p>
               <ul class="project-tags">
-                <li>React</li><li>Vite</li><li>Recharts + React Leaflet</li><li>Leaflet</li><li>TailwindCSS</li>
+                <li id="proj1-tag1">React</li><li id="proj1-tag2">Vite</li><li id="proj1-tag3">Recharts + React Leaflet</li><li id="proj1-tag4">Leaflet</li><li id="proj1-tag5">TailwindCSS</li>
               </ul>
-              <a class="project-link" href="https://devjvidal.github.io/painel-operacoes-logisticas/" target="_blank" rel="noopener">
+              <a id="proj1-link" class="project-link" href="https://devjvidal.github.io/painel-operacoes-logisticas/" target="_blank" rel="noopener">
                 Ver projeto
               </a>
             </div>
           </article>
 
-          <!-- Card 2 -->
           <article class="project-card reveal fade-up delay-100">
             <img src="./assets/projeto2.png" alt="Projeto 2" class="project-thumb">
             <div class="project-body">
-              <h3 class="project-title">Simulador de Trade</h3>
-              <p class="project-desc">
+              <h3 id="proj2-title" class="project-title">Simulador de Trade</h3>
+              <p id="proj2-desc" class="project-desc">
                 Um projeto em HTML, CSS e JavaScript puro que simula operações de trade em criptomoedas,
                 trazendo gráficos em tempo real, histórico de ordens e estatísticas de desempenho.
               </p>
               <ul class="project-tags">
-                <li>HTML5</li><li>CSS3</li><li>JavaScript (ES6+)</li>
+                <li id="proj2-tag1">HTML5</li><li id="proj2-tag2">CSS3</li><li id="proj2-tag3">JavaScript (ES6+)</li>
               </ul>
-              <a class="project-link" href="https://devjvidal.github.io/simulador-trade" target="_blank" rel="noopener">
+              <a id="proj2-link" class="project-link" href="https://devjvidal.github.io/simulador-trade" target="_blank" rel="noopener">
                 Ver projeto
               </a>
             </div>
           </article>
 
-          <!-- Card 3 -->
           <article class="project-card reveal fade-up delay-200">
             <img src="./assets/projeto3.png" alt="Projeto 3" class="project-thumb">
             <div class="project-body">
-              <h3 class="project-title">Vidarix</h3>
-              <p class="project-desc">
+              <h3 id="proj3-title" class="project-title">Vidarix</h3>
+              <p id="proj3-desc" class="project-desc">
                 Uma plataforma interativa de streaming estilo Netflix, desenvolvida em Next.js,
                 para explorar filmes e séries de forma dinâmica e intuitiva.
               </p>
               <ul class="project-tags">
-                <li>Next.js</li><li>React</li><li>TailwindCSS</li><li>TMDB.API</li>
+                <li id="proj3-tag1">Next.js</li><li id="proj3-tag2">React</li><li id="proj3-tag3">TailwindCSS</li><li id="proj3-tag4">TMDB.API</li>
               </ul>
-              <a class="project-link" href="https://example.com" target="_blank" rel="noopener">
+              <a id="proj3-link" class="project-link" href="https://example.com" target="_blank" rel="noopener">
                 Ver projeto
               </a>
             </div>
           </article>
         </div>
 
-        <!-- SLIDE 2 -->
         <div class="project-slide" data-slide="1">
           <article class="project-card">
             <img src="./assets/projeto4.png" alt="Projeto 4" class="project-thumb">
             <div class="project-body">
-              <h3 class="project-title">NeuroPulse</h3>
-              <p class="project-desc">
+              <h3 id="proj4-title" class="project-title">NeuroPulse</h3>
+              <p id="proj4-desc" class="project-desc">
                 O NeuroPulse é um painel interativo desenvolvido em Python com uso de Streamlit, criado para analisar a prevalência de depressão diagnosticada por profissional de saúde mental no Brasil. Este projeto utiliza dados reais, extraídos diretamente do SIDRA/IBGE (PNS 2019).
               </p>
               <ul class="project-tags">
-                <li>Python</li><li>Streamlit</li><li>Pandas</li><li>Plotly</li><li>Express</li><li>Pathlib</li><li>Unicodedata</li>
+                <li id="proj4-tag1">Python</li><li id="proj4-tag2">Streamlit</li><li id="proj4-tag3">Pandas</li><li id="proj4-tag4">Plotly</li><li id="proj4-tag5">Express</li><li id="proj4-tag6">Pathlib</li><li id="proj4-tag7">Unicodedata</li>
               </ul>
-              <a class="project-link" href="https://neuropulse-bigdatapython.streamlit.app" target="_blank" rel="noopener">
+              <a id="proj4-link" class="project-link" href="https://neuropulse-bigdatapython.streamlit.app" target="_blank" rel="noopener">
                 Ver projeto
               </a>
             </div>
@@ -238,14 +228,14 @@
           <article class="project-card">
             <img src="./assets/projeto5.png" alt="Projeto 5" class="project-thumb">
             <div class="project-body">
-              <h3 class="project-title">Projeto Extra 2</h3>
-              <p class="project-desc">
+              <h3 id="proj5-title" class="project-title">Projeto Extra 2</h3>
+              <p id="proj5-desc" class="project-desc">
                 Outro projeto extra. Você pode usar para destacar um back-end, API, dashboard, etc.
               </p>
               <ul class="project-tags">
-                <li>Node.js</li><li>API REST</li>
+                <li id="proj5-tag1">Node.js</li><li id="proj5-tag2">API REST</li>
               </ul>
-              <a class="project-link" href="#" target="_blank" rel="noopener">
+              <a id="proj5-link" class="project-link" href="#" target="_blank" rel="noopener">
                 Ver projeto
               </a>
             </div>
@@ -254,14 +244,14 @@
           <article class="project-card">
             <img src="./assets/projeto6.png" alt="Projeto 6" class="project-thumb">
             <div class="project-body">
-              <h3 class="project-title">Projeto Extra 3</h3>
-              <p class="project-desc">
-                Mais um projeto para compor o carrossel. Troque por algo que faça sentido no seu portfólio.
+              <h3 id="proj6-title" class="project-title">Projeto Extra 3</h3>
+              <p id="proj6-desc" class="project-desc">
+                Mais um projeto para compor o carrossel.
               </p>
               <ul class="project-tags">
-                <li>Next.js</li><li>Full Stack</li>
+                <li id="proj6-tag1">Next.js</li><li id="proj6-tag2">Full Stack</li>
               </ul>
-              <a class="project-link" href="#" target="_blank" rel="noopener">
+              <a id="proj6-link" class="project-link" href="#" target="_blank" rel="noopener">
                 Ver projeto
               </a>
             </div>
@@ -269,13 +259,11 @@
         </div>
       </div>
 
-      <!-- Botão PRÓXIMO -->
-      <button class="carousel-btn" data-direction="next" aria-label="Próximos projetos">
+      <button id="carousel-next" class="carousel-btn" data-direction="next" aria-label="Próximos projetos">
         ›
       </button>
     </div>
 
-    <!-- Bolinhas de navegação -->
     <div class="carousel-dots mt-4">
       <button class="dot active" data-target="0" aria-label="Ir para o primeiro grupo de projetos"></button>
       <button class="dot" data-target="1" aria-label="Ir para o segundo grupo de projetos"></button>
@@ -284,103 +272,93 @@
 
 
 
-  <!-- Habilidades -->
   <section id="habilidades" class="mx-auto max-w-7xl px-6 py-20">
-    <h2 class="section-title reveal fade-up">Habilidades</h2>
-    <p class="reveal fade-up mt-3 max-w-2xl text-slate-400">Tecnologias com as quais trabalho no dia a dia. As barras animam ao entrar na tela.</p>
+    <h2 class="section-title reveal fade-up" id="habilidades-title">Habilidades</h2>
+    <p class="reveal fade-up mt-3 max-w-2xl text-slate-400" id="habilidades-desc">Tecnologias que uso para transformar ideias em aplicações reias.
+      Experiência prática representada de forma visual.
+    </p>
 
     <div class="mt-10 grid gap-8 md:grid-cols-2">
-      <!-- COLUNA ESQUERDA -->
       <div class="reveal fade-left space-y-6">
-        <!-- HTML -->
         <div>
           <div class="flex items-center gap-3">
             <img src="./assets/icons/html.svg" alt="HTML" class="w-6 h-6 inline-block mr-2" style="filter: invert(54%) sepia(98%) saturate(749%) hue-rotate(0deg) brightness(100%) contrast(100%);">
-            <span class="font-medium">HTML</span>
-            <span class="ml-auto text-sm text-slate-400">Avançado</span>
+            <span id="skill-html-name" class="font-medium">HTML</span>
+            <span id="skill-html-level" class="ml-auto text-sm text-slate-400">Avançado</span>
           </div>
           <div class="skill-bar" data-skill="95"></div>
         </div>
 
-        <!-- CSS / Tailwind -->
         <div>
           <div class="flex items-center gap-3">
             <img src="./assets/icons/css.svg" alt="CSS" class="h-6 w-6 opacity-90" style="filter: invert(38%) sepia(98%) saturate(749%) hue-rotate(180deg) brightness(100%) contrast(100%);">
-            <span class="font-medium">CSS / Tailwind</span>
-            <span class="ml-auto text-sm text-slate-400">Avançado</span>
+            <span id="skill-css-name" class="font-medium">CSS / Tailwind</span>
+            <span id="skill-css-level" class="ml-auto text-sm text-slate-400">Avançado</span>
           </div>
           <div class="skill-bar" data-skill="90"></div>
         </div>
 
-        <!-- JavaScript -->
         <div>
           <div class="flex items-center gap-3">
             <img src="./assets/icons/js.svg" alt="JS" class="h-6 w-6 opacity-90" style="filter: invert(88%) sepia(98%) saturate(749%) hue-rotate(10deg) brightness(100%) contrast(100%);">
-            <span class="font-medium">JavaScript</span>
-            <span class="ml-auto text-sm text-slate-400">Avançado</span>
+            <span id="skill-js-name" class="font-medium">JavaScript</span>
+            <span id="skill-js-level" class="ml-auto text-sm text-slate-400">Avançado</span>
           </div>
           <div class="skill-bar" data-skill="88"></div>
         </div>
 
-        <!-- React / Next.js -->
         <div>
           <div class="flex items-center gap-3">
             <img src="./assets/icons/react.svg" alt="React" class="h-6 w-6 opacity-90" style="filter: invert(62%) sepia(98%) saturate(749%) hue-rotate(170deg) brightness(100%) contrast(100%);">
-            <span class="font-medium">React / Next.js</span>
-            <span class="ml-auto text-sm text-slate-400">Avançado</span>
+            <span id="skill-react-name" class="font-medium">React / Next.js</span>
+            <span id="skill-react-level" class="ml-auto text-sm text-slate-400">Avançado</span>
           </div>
           <div class="skill-bar" data-skill="85"></div>
         </div>
 
-        <!-- Git & Docker -->
         <div>
           <div class="flex items-center gap-3">
             <img src="./assets/icons/docker.svg" alt="Git e Docker" class="h-6 w-6 opacity-90" style="filter: invert(38%) sepia(98%) saturate(749%) hue-rotate(180deg) brightness(100%) contrast(100%);">
-            <span class="font-medium">Git & Docker</span>
-            <span class="ml-auto text-sm text-slate-400">Avançado</span>
+            <span id="skill-git-name" class="font-medium">Git & Docker</span>
+            <span id="skill-git-level" class="ml-auto text-sm text-slate-400">Avançado</span>
           </div>
           <div class="skill-bar" data-skill="80"></div>
         </div>
       </div>
 
-      <!-- COLUNA DIREITA -->
       <div class="reveal fade-right space-y-6">
-        <!-- Node / Express / Nest -->
         <div>
           <div class="flex items-center gap-3">
             <img src="./assets/icons/node.svg" alt="Node" class="h-6 w-6 opacity-90" style="filter: invert(48%) sepia(98%) saturate(749%) hue-rotate(70deg) brightness(100%) contrast(100%);">
-            <span class="font-medium">Node.js / Express / NestJS</span>
-            <span class="ml-auto text-sm text-slate-400">Avançado</span>
+            <span id="skill-node-name" class="font-medium">Node.js / Express / NestJS</span>
+            <span id="skill-node-level" class="ml-auto text-sm text-slate-400">Avançado</span>
           </div>
           <div class="skill-bar" data-skill="87"></div>
         </div>
 
-        <!-- Python -->
         <div>
           <div class="flex items-center gap-3">
             <img src="./assets/icons/python.svg" alt="Python" class="h-6 w-6 opacity-90" style="filter: invert(48%) sepia(98%) saturate(749%) hue-rotate(190deg) brightness(100%) contrast(100%);">
-            <span class="font-medium">Python</span>
-            <span class="ml-auto text-sm text-slate-400">Intermediário</span>
+            <span id="skill-python-name" class="font-medium">Python</span>
+            <span id="skill-python-level" class="ml-auto text-sm text-slate-400">Intermediário</span>
           </div>
           <div class="skill-bar" data-skill="75"></div>
         </div>
 
-        <!-- PHP -->
         <div>
           <div class="flex items-center gap-3">
             <img src="./assets/icons/php.svg" alt="PHP" class="h-6 w-6 opacity-90">
-            <span class="font-medium">PHP</span>
-            <span class="ml-auto text-sm text-slate-400">Avançado</span>
+            <span id="skill-php-name" class="font-medium">PHP</span>
+            <span id="skill-php-level" class="ml-auto text-sm text-slate-400">Avançado</span>
           </div>
           <div class="skill-bar" data-skill="85"></div>
         </div>
 
-        <!-- SQL -->
         <div>
           <div class="flex items-center gap-3">
             <img src="./assets/icons/sql.svg" alt="SQL" class="h-6 w-6 opacity-90" style="filter: invert(38%) sepia(98%) saturate(749%) hue-rotate(180deg) brightness(100%) contrast(100%);">
-            <span class="font-medium">SQL (PostgreSQL / MySQL)</span>
-            <span class="ml-auto text-sm text-slate-400">Avançado</span>
+            <span id="skill-sql-name" class="font-medium">SQL (PostgreSQL / MySQL)</span>
+            <span id="skill-sql-level" class="ml-auto text-sm text-slate-400">Avançado</span>
           </div>
           <div class="skill-bar" data-skill="82"></div>
         </div>
@@ -388,45 +366,43 @@
     </div>
   </section>
 
-  <!-- Contato -->
   <section id="contato" class="mx-auto max-w-7xl px-6 py-20">
     <div class="reveal fade-up">
-      <h2 class="section-title">Vamos conversar</h2>
-      <p class="mt-3 max-w-2xl text-slate-400">Aberto para oportunidades, freelas e colaborações. Me chame nas redes abaixo:</p>
+      <h2 class="section-title" id="contato-title">Vamos conversar</h2>
+      <p class="mt-3 max-w-2xl text-slate-400" id="contato-desc">Aberto a projetos, oportunidades e boas ideias. 
+        Fique à vontade para entrar em contato através das redes abaixo.</p>
     </div>
 
     <div class="reveal fade-up mt-8 flex flex-wrap gap-4">
       <a class="contact-chip" href="mailto:jandersonvidalvidal14@gmail.com" target="_blank" rel="noopener">
-        <img src="./assets/icons/mail.svg" alt="" class="h-5 w-5 opacity-90" style="filter: invert(38%) sepia(98%) saturate(749%) hue-rotate(-10deg) brightness(100%) contrast(100%);"> Email
+        <img src="./assets/icons/mail.svg" alt="" class="h-5 w-5 opacity-90" style="filter: invert(38%) sepia(98%) saturate(749%) hue-rotate(-10deg) brightness(100%) contrast(100%);"> <span id="contact-email">Email</span>
       </a>
       <a class="contact-chip" href="https://www.linkedin.com/in/janderson-vidal" target="_blank" rel="noopener">
-        <img src="./assets/icons/linkedin.svg" alt="" class="h-5 w-5 opacity-90" style="filter: invert(38%) sepia(98%) saturate(749%) hue-rotate(180deg) brightness(100%) contrast(100%);"> LinkedIn
+        <img src="./assets/icons/linkedin.svg" alt="" class="h-5 w-5 opacity-90" style="filter: invert(38%) sepia(98%) saturate(749%) hue-rotate(180deg) brightness(100%) contrast(100%);"> <span id="contact-linkedin">LinkedIn</span>
       </a>
       <a class="contact-chip" href="https://github.com/DevJVidal" target="_blank" rel="noopener">
-        <img src="./assets/icons/github.svg" alt="" class="h-5 w-5 opacity-90" style="filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);"> GitHub
+        <img src="./assets/icons/github.svg" alt="" class="h-5 w-5 opacity-90" style="filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);"> <span id="contact-github">GitHub</span>
       </a>
       <a class="contact-chip" href="https://wa.me/5588993203616" target="_blank" rel="noopener">
-        <img src="./assets/icons/whatsapp.svg" alt="" class="h-5 w-5 opacity-90" style="filter: invert(38%) sepia(98%) saturate(749%) hue-rotate(90deg) brightness(100%) contrast(100%);"> WhatsApp
+        <img src="./assets/icons/whatsapp.svg" alt="" class="h-5 w-5 opacity-90" style="filter: invert(38%) sepia(98%) saturate(749%) hue-rotate(90deg) brightness(100%) contrast(100%);"> <span id="contact-whatsapp">WhatsApp</span>
       </a>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="border-t border-white/10 bg-slate-950/60">
     <div class="mx-auto max-w-7xl px-6 py-10 text-sm text-slate-400">
       <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
-        <p>© <span id="year"></span> Janderson. Todos os direitos reservados.</p>
+        <p id="footer-text">© <span id="year"></span> <span id="footer-copy-name">Janderson. Todos os direitos reservados.</span></p>
         <ul class="flex flex-wrap items-center gap-4">
-          <li><a href="#sobre" class="hover:text-white">Sobre</a></li>
-          <li><a href="#projetos" class="hover:text-white">Projetos</a></li>
-          <li><a href="#habilidades" class="hover:text-white">Habilidades</a></li>
-          <li><a href="#contato" class="hover:text-white">Contato</a></li>
+          <li><a href="#sobre" class="hover:text-white" id="footer-sobre">Sobre</a></li>
+          <li><a href="#projetos" class="hover:text-white" id="footer-projetos">Projetos</a></li>
+          <li><a href="#habilidades" class="hover:text-white" id="footer-habilidades">Habilidades</a></li>
+          <li><a href="#contato" class="hover:text-white" id="footer-contato">Contato</a></li>
         </ul>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="./js/main.js"></script>
 </body>
 </html>
