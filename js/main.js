@@ -560,3 +560,27 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const logoTextElement = document.getElementById("nav-logo-text");
+  
+  // O texto que será digitado
+  const textToType = "DevDias"; 
+  let charIndex = 0;
+
+  function typeLogoEffect() {
+    // Verifica se ainda há letras para digitar
+    if (charIndex < textToType.length) {
+      logoTextElement.textContent += textToType.charAt(charIndex);
+      charIndex++;
+      
+      // Gera uma velocidade aleatória entre 100ms e 250ms para parecer humano
+      const randomSpeed = Math.floor(Math.random() * 150) + 100;
+      
+      setTimeout(typeLogoEffect, randomSpeed);
+    }
+  }
+
+  // Inicia o efeito meio segundo (500ms) após a página carregar
+  setTimeout(typeLogoEffect, 500);
+});

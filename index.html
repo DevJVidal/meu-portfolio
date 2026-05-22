@@ -27,10 +27,13 @@
 
   <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-slate-950/60">
     <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
-      <a href="#home" class="group inline-flex items-center gap-2">
-        <img src="./assets/icons/logojr.png" alt="Logo" class="h-8 w-8"
-          style="filter: brightness(0) saturate(100%) invert(41%) sepia(87%) saturate(747%) hue-rotate(230deg) brightness(95%) contrast(110%);" />
-        <span id="nav-logo-text" class="text-[#8B5CF6] group-hover:text-white transition">DevJVidal</span>
+      <a href="#home" class="group inline-flex items-center gap-2 overflow-hidden">
+        
+        <div class="flex items-center font-mono text-xl md:text-2xl font-bold tracking-tight">
+          <span id="nav-logo-text" class="text-[#8B5CF6] group-hover:text-white transition duration-300"></span>
+          <span class="text-[#8B5CF6] group-hover:text-white transition duration-300 animate-pulse ml-1 font-bold">_</span>
+        </div>
+        
       </a>
       <ul class="hidden md:flex items-center gap-6 text-sm text-slate-300">
         <li><a href="#sobre" class="nav-link" id="nav-sobre">Sobre</a></li>
@@ -223,7 +226,7 @@
             <div class="project-body">
               <h3 id="proj4-title" class="project-title">NeuroPulse</h3>
               <p id="proj4-desc" class="project-desc">
-                O NeuroPulse é um painel interativo desenvolvido em Python com uso de Streamlit, criado para analisar a prevalência de depressão diagnosticada por profissional de saúde mental no Brasil. Este projeto utiliza dados reais, extraídos diretamente do SIDRA/IBGE (PNS 2019).
+                O NeuroPulse é um painel interativo desenvolvido em Python com uso de Streamlit, criado para analisar a prevalência de depressão diagnosticada por profissional de saúde mental no Brasil. Este projeto utiliza dados reais, extraídos diretamente do SIDRA/IBGE (P PNS 2019).
               </p>
               <ul class="project-tags">
                 <li id="proj4-tag1">Python</li><li id="proj4-tag2">Streamlit</li><li id="proj4-tag3">Pandas</li><li id="proj4-tag4">Plotly</li><li id="proj4-tag5">Express</li><li id="proj4-tag6">Pathlib</li><li id="proj4-tag7">Unicodedata</li>
@@ -235,7 +238,7 @@
           </article>
 
           <article class="project-card">
-            <img src="./assets/projeto5.png" alt="Projeto 5" class="project-thumb">
+            <img src="./assets/phone.png" alt="Projeto 5" class="project-thumb">
             <div class="project-body">
               <h3 id="proj5-title" class="project-title">Projeto Extra 2</h3>
               <p id="proj5-desc" class="project-desc">
@@ -404,6 +407,9 @@
     </div>
   </section>
 
+  <section id="habilidades" class="mx-auto max-w-7xl px-6 py-20">
+    </section>
+
   <footer class="border-t border-white/10 bg-slate-950/60">
     <div class="mx-auto max-w-7xl px-6 py-10 text-sm text-slate-400">
       <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
@@ -424,4 +430,4 @@
 
   <script src="./js/main.js"></script>
 </body>
-</html>
+</html> 
