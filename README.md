@@ -44,13 +44,13 @@ An interactive dashboard developed in **React** for analyzing product shipments 
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-### 💰 Trade Simulator
-An interactive dashboard developed in React for simulating cryptocurrency buying and selling. The platform allows trading with real-time market prices, visualizing performance metrics, and testing financial strategies without real risk. The system integrates data from crypto assets such as Bitcoin and Ethereum, and offers interactive charts built with libraries like Recharts and trade control via Redux, making analysis dynamic and intuitive.
+### 💪 Landing Page Vitor Couto
+A high-performance digital solution custom-built for personal trainers and elite coaches who want to position their work as a premium service, automatically screen potential clients, and close high-value consulting deals directly via WhatsApp.
 
-**Technologies:** HTML5, CSS3, JavaScript (ES6+)  
+**Technologies:** React 18+, TypeScript, Vite, TailwindCSS, Framer Motion, Lucide React, API do IBGE, API do WhatsApp  
 
 ![DevFinance Screenshot](./assets/projeto2.png)  
-🔗 [See project](https://github.com/DevJVidal/simulador-trade)
+🔗 [See project](https://vitor-couto-personal.vercel.app/)
   
 ---------------------------------------------------------------------------------------------------------------------------
 
